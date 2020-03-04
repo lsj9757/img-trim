@@ -187,7 +187,7 @@ class IndexPage extends React.Component {
             // 本地直接上传
             Promise.all(
                 files.map((file, index) => {
-                    return imgFn.uploadImgs('xxxxx', file, index).catch(() => {failArr.push(index + 1); return false})
+                    return imgFn.uploadImgs('cdn链接', file, index).catch(() => {failArr.push(index + 1); return false})
                 })
             ).then((linkArr) => {
                 message.destroy();

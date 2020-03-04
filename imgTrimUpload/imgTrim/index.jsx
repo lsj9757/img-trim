@@ -118,7 +118,7 @@ class ImgTrim extends React.Component {
     receiveImg = () => {
         let { fileListArray, fileSelected } = this.state;
         // cdn
-        this.uploadUrl = 'https://media.mogu.com/image/put?appKey=11m';
+        this.uploadUrl = 'cdn链接';
         // 初始化裁剪图片列表信息
         this.trimInfoList = Array.apply(null, {length: fileListArray.length}).map(() => ({}));
         this.initialImage();
